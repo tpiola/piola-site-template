@@ -1,0 +1,63 @@
+name: 🎯 Novo Cliente (Onboarding)
+description: Onboarding de um novo cliente piola.build
+title: "[CLIENTE] Nome — Nicho"
+labels: ["type/feature", "hermes/neurobuild"]
+body:
+  - type: input
+    id: cliente
+    attributes:
+      label: Nome do cliente/empresa
+    validations:
+      required: true
+  - type: dropdown
+    id: pacote
+    attributes:
+      label: Pacote contratado
+      options:
+        - STARTER — R$2.500 + R$197/mês
+        - PRO — R$5.000 + R$497/mês
+        - PREMIUM — R$10.000 + R$997/mês
+    validations:
+      required: true
+  - type: input
+    id: nicho
+    attributes:
+      label: Nicho
+      placeholder: "Odontologia / Restaurante / Advocacia / etc."
+    validations:
+      required: true
+  - type: input
+    id: cidade
+    attributes:
+      label: Cidade
+    validations:
+      required: true
+  - type: input
+    id: whatsapp
+    attributes:
+      label: WhatsApp do cliente
+      placeholder: "5516999999999"
+    validations:
+      required: true
+  - type: input
+    id: dominio
+    attributes:
+      label: Domínio final
+      placeholder: "cliente.com.br"
+  - type: textarea
+    id: brief
+    attributes:
+      label: Brief inicial
+      description: Objetivo, diferenciais, tom de voz, referências visuais
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist NEUROBUILD
+      options:
+        - label: "Chronos — HERMES-Score do lead calculado"
+        - label: "Archon+Oracle — Persona neuropsicológica gerada"
+        - label: "Forge — Web App Next.js construído"
+        - label: "Sentinel — Deploy live"
+        - label: "Cliente adicionado ao Piola OS (Notion)"

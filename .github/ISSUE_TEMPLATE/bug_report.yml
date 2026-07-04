@@ -1,0 +1,44 @@
+name: 🐛 Bug
+description: Reporte um problema no site
+title: "[BUG] "
+labels: ["type/bug", "priority/medium"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: O que está acontecendo?
+      placeholder: Quando o usuário clica em X, acontece Y ao invés de Z...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Acesse /pagina
+        2. Clique em botão
+        3. Erro aparece
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      placeholder: "Chrome 130 / iPhone 15 / iOS 18"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impacto
+      options:
+        - "🔴 Bloqueia receita/vendas"
+        - "🟠 Afeta conversão"
+        - "🟡 Estético/menor"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/logs

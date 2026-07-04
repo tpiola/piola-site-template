@@ -1,0 +1,38 @@
+name: ✨ Feature
+description: Solicitação de nova funcionalidade
+title: "[FEAT] "
+labels: ["type/feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema/Oportunidade
+      description: Que dor esta feature resolve? Qual receita/conversão gera?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Como deveria funcionar?
+    validations:
+      required: true
+  - type: dropdown
+    id: pacote
+    attributes:
+      label: Pacote piola.build
+      options:
+        - STARTER (R$2.5K)
+        - PRO (R$5K)
+        - PREMIUM (R$10K)
+        - Interno
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      placeholder: |
+        - [ ] Usuário consegue X
+        - [ ] Lighthouse mantido ≥ 95
+        - [ ] Testado mobile-first
